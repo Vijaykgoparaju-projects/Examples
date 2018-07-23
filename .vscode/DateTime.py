@@ -1,0 +1,17 @@
+import datetime as DT
+
+currentTime=DT.datetime.now()
+createDateTime=DT.datetime(2020,12,12,1,30,59,98989)
+print("\n",createDateTime)
+print("\n",currentTime)
+print("\n",currentTime.year)
+print("\n",currentTime.strftime("%a"))
+print("\n",currentTime.strftime("%A"))
+print("\n",currentTime.strftime("%w"))
+print("\n",currentTime.strftime("%B"))
+print("\n",currentTime.strftime("%Z"))
+print("\n",currentTime.strftime("%d"))
+print("\n",currentTime.strftime("%U"))
+print("\n",currentTime.strftime("%W"))
+print("\n",currentTime.strftime("%j"))
+print("\n",currentTime.strftime("A %j"))
