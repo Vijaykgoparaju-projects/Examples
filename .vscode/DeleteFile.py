@@ -3,7 +3,10 @@ def DeleteFileAndWrite():
     
     try:
         filepath=str(input("Enter the file path"))
-        filepath.replace("/","//")
+        if not filepath:
+            exit()
+        else:
+            filepath.replace("/","//")
         os.remove(filepath)
         print("File Deleted successfully")
     except FileNotFoundError:

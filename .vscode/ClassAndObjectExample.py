@@ -9,11 +9,8 @@ class Person:
 name=input("please enter your name for creating candidate:-\n")
 age=input("please enter your candidate age\n")
 p1 = Person(name, age)
-p1.myfunc()
-p1.name="Bhanu Chandra"
-print(p1.name)
-p1.age=90
-print(p1.age)
+p2 = Person('bhanu chandra','34')
+print(p1.myfunc(), p2.myfunc())
 del p1
 try:
   print(p1)
